@@ -1,4 +1,25 @@
 
+.reveal header h1 {
+	font-size: 12vh;
+}
+
+.reveal header img {
+	margin: 0px;
+	border: none;
+	box-shadow: 0px 0px 0px transparent;
+	background: transparent;
+}
+
+
+.reveal header p {
+	font-size: 3vh;
+	float: right;
+}
+
+.reveal header p span.author {
+	font-weight: bold;
+}
+
 footer {
 	position: absolute;
 	bottom: 0px;
