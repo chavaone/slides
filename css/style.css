@@ -1,5 +1,11 @@
 
 
+.reveal h1
+{
+	font-size: 3.3em;
+}
+
+
 /* PORTADA */
 
 .reveal section#portada h1 {
@@ -70,6 +76,7 @@ ul#contact li {
 	display: inline;
 	padding-left: 1vw;
 	padding-right: 0.5vw;
+	font-size: 0.9em;
 }
 
 span.icon-earth:before {
