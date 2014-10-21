@@ -1,5 +1,14 @@
 
 
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4
+{
+	white-space: pre;
+}
+
+
 .reveal h1
 {
 	font-size: 3.3em;
