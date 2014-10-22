@@ -31,7 +31,8 @@
 
 .reveal section#portada p {
 	font-size: 3vh;
-	float: right;
+	display:block;
+	text-align: right;
 }
 
 .reveal section#portada p span.author {
