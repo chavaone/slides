@@ -4,18 +4,17 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Como colaborar en GNOME - Marcos Chavarría Teijeiro</title>
+    <title>GNOMECAT, un editor de ficheiros GNU GetText para o proxecto GNOME - Marcos Chavarría Teijeiro</title>
 
     <link rel="icon" type="image/png" href="http://www.gnome.org/wp-content/themes/gnome-grass/images/favicon.png">
 
-    <meta name="description" content="Como colaborar en GNOME">
+    <meta name="description" content="GNOMECAT, un editor de ficheiros GNU Gettext para o proxecto GNOME">
     <meta name="author" content="Marcos Chavarría Teijeiro">
 
     <link rel="stylesheet" href="reveal/css/reveal.min.css">
     <link rel="stylesheet" href="reveal/css/theme/simple.css" id="theme">
-    <link rel="stylesheet" href="css/style.css">
-
     <link rel="stylesheet" href="css/monokai.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -24,164 +23,168 @@
 
       <div class="slides">
         <section id="portada">
-          <h1>Como colaborar en</h1>
-          <img src="img/GnomeLogoHorizontal.svg" alt="">
-          <p><span class="author">Marcos Chavarría Teijeiro</span>&nbsp;(<a href="http://aquelando.info">aquelando.info</a>)</p>
-          <p><span class="author">Daniel Mustieles García</span>&nbsp;(<a href="http://wiki.gnome.org/DanielMustieles">wiki.gnome.org/DanielMustieles</a>)</p>
+	  <header>
+            <h1>GNOMECAT<span class="coma">,</span></h1>
+	    <h3>un editor de ficheiros</h3>
+	    <h2>GNU GetText</h2>
+            <h3>para o proxecto</h3>
+	    <h2>&nbsp;<img src="img/GnomeLogoHorizontal.svg" alt=""></h2>
+	  </header>
+	  <div class="data">
+            <p>Autor: <span class="author">Marcos Chavarría Teijeiro</span></p>
+	    <p>Director: <span class="author">Fernando Bellas Permuy</span></p>
+	  </div>
         </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
         <section>
           <section>
-            <h1>Introducción</h1>
+	    <h1>Índice</h1>
+	    <ol>
+              <li>Introducción</li>
+	      <li>Metodoloxía</li>
+	      <li>Planificación</li>
+	      <li>Diseño e Implementación</li>
+	      <li>Demo</li>
+	      <li>Conclusións e Traballo Futuro</li>
+	    </ol>
+          </section>
+	</section>
+
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+
+        <section>
+          <section>
+            <h1>GNU GetText</h1>
+	    <pre style="display:inline-block; width: 40vh;">program.c<code class="c">[...]
+printf (_("Hello World!"));
+[...]</code></pre>
+	    <pre style="display:inline-block; width: 40vh;">program.po<code>[...]
+#: helloworld.c:14
+#, c-format
+msgid "Hello World!"
+msgstr ""
+[...]</code></pre>
           </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
           <section>
-            <h1>¿Qué es <img width="400" style="border: medium none; box-shadow: none; vertical-align: middle;" src="img/GnomeLogoHorizontal.svg" alt="">?</h1>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h2>¿Qué es <img width="200" style="border: medium none; box-shadow: none; vertical-align: middle;" src="img/GnomeLogoHorizontal.svg" alt="">?</h2>
+            <h2>Característica de GetText</h2>
             <ul>
-              <li>Entorno de escritorio</li>
-              <li>Infraestructura de Desarrollo</li>
-              <li>Comunidad</li>
+              <li>Soporte avanzado de plurais</li>
+              <li>Traducións difusas</li>
+              <li>Comentarios</li>
+	      <li>[...]</li>
             </ul>
           </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
+         <section>
+	   <h2>GNOME</h2>
+	   <img alt="" height="500vh" src="img/gnome316.png"/>
+         </section>
+
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+
           <section>
-            <h1>¿Por qué colaborar con <img width="400" style="border: medium none; box-shadow: none; vertical-align: middle;" src="img/GnomeLogoHorizontal.svg" alt="">?</h1>
+            <h1>GTranslator</h1>
+	    <ul>
+	      <li>Aplicación CAT oficial de GNOME.</li>
+	      <li>Sen <em>maintainer</em>.</li>
+	      <li>Con moitos bugs.</li>
+	      <li>Escrita en C con GObject.</li>
+	    </ul>
           </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
           <section>
-            <h2>¿Por qué colaborar con <img width="200" style="border: medium none; box-shadow: none; vertical-align: middle;" src="img/GnomeLogoHorizontal.svg" alt="">?</h2>
-            <ul>
-              <li>Mejorar las herramientas que usas cada día.</li>
-              <li>Experiencia en el mundo real.</li>
-            </ul>
-          </section>
-
+	    <img height="600vh" style="padding:0em;margin: 0em auto;" alt="" src="img/guadec2012.jpg"/>
+	    <p style="font-size:0.4em; word-spacing:0.1em;">Foto de Ana Rey (CC BY-SA)</p>
+	  </section>
         </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
         <section>
           <section>
-            <h1>¿Donde buscar ayuda?</h1>
+            <h2>Metodoloxía</h2>
+	    <h1>eXtreme Programming</h1>
           </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
           <section>
-            <h1>IRC</h1>
-            <h3 class="fragment">(<b>I</b>nternet <b>R</b>elay <b>C</b>hat)</h3>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h2>Redes Interesantes</h2>
+            <h2>Metodoloxía</h2>
             <ul>
-              <li>Freenode</li>
-              <li>GimpNet
-                <ul>
-                  <li>#gnome-love</li>
-                  <li>Salas de cada proyecto...</li>
-                </ul>
-              </li>
+              <li>Código Aberto</li>
+              <li>Deseño Simple</li>
+	      <li>Estandares de Programación</li>
+	      <li>Cliente no Sitio</li>
+	      <li>Bug Tracking</li>
             </ul>
           </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h1>Listas de correo</h1>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h3>Algunas listas interesantes</h2>
-            <ul>
-              <li>gnome-love</li>
-              <li>desktopdev</li>
-              <li>Lista de cada proyecto...</li>
-            </ul>
-          </section>
-        </section>
+	</section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
         <section>
           <section>
-            <h1>Manos a la obra</h1>
+            <h1>Planificación</h1>
+	    <img height="300vh" style="box-shadow: none; display:inline-block; border:none; padding: 0.5em;" src="img/gsoc2013.png"/>
+	    <img height="300vh" style="box-shadow: none; display:inline-block; border:none; padding: 0.5em;" src="img/gsoc2014.png"/>
           </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
           <section>
-            <h1><b>Descargar</b>, <b>Ejecutar</b>, <b>Descubrir</b></h1>
+	    <h3>GSoC 2013</h3>
+	    <p>6 Iteracións</p>
+	    <p>325 horas</p>
+	    <hr/>
+	    <h3>Curso 2013/2014</h3>
+	    <p>2 Iteracións</p>
+	    <p>85 horas</p>
+	    <hr/>
+	    <h3>GSoC 2014</h3>
+	    <p>5 Iteracións</p>
+	    <p>325 horas</p>
           </section>
+	</section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-          <section>
-            <h3>Descargar</h3>
-            <pre><code class="nohighlight">git clone git://git.gnome.org/newcomers-tutorial</code></pre>
-            <h3>Ejecutar</h3>
-            <pre><code class="nohighlight">cd newcomers-tutorial
-gjs hello.js</code></pre>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h3>Descubrir</h3>
-            <video controls="" autoplay="" loop="true" name="media">
-              <source src="video/newcommers_tuto_fail.webm" type="video/webm">
-            </video>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h3>Entre muchos <em>bugs</em>...</h3>
-            <img src="img/captura_newcommers_program_con_bug.png" alt="">
-          </section>
+        <section>
+	  <section>
+	    <h1>Desenvolvemento</h1>
+	  </section>
+	</section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
-          <section>
-            <h3>Reportar el <em>bug</em></h3>
-            <h1>Bugzilla</h1>
-            <h4>(<a href="bugzilla.gnome.org">bugzilla.gnome.org</a>)</h4>
-          </section>
+        <section>
+	  <section>
+	    <h1>DEMO</h1>
+	  </section>
 
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h3>Un buen <em>bug</em> report debe ser:</h3>
-            <ul>
-              <li>Reproducible</li>
-              <li>Específico</li>
-              <li>Único</li>
-              <li>Actual</li>
-            </ul>
-          </section>
+	  <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+	 
+	  <section>
+	    <video src=""></video>
+	  </section>
+	</section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
           <section>
-            <img src="img/captura_bugzilla.png" alt="">
+	    <section>
+	      <h1>Conclusións e Traballo Futuro</h1>
+	    </section>
           </section>
+
+
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 

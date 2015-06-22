@@ -18,26 +18,61 @@
 /* PORTADA */
 
 .reveal section#portada h1 {
-	font-size: 10vh;
+    font-size: 18vh;
 }
 
 .reveal section#portada img {
-	margin: 0px;
-	border: none;
-	box-shadow: 0px 0px 0px transparent;
-	background: transparent;
+    width: 40vh;
+    border: none;
+    box-shadow: 0px 0px 0px transparent;
+    background: transparent;
+    margin:auto;
 }
 
+
+.reveal section#portada h2,
+.reveal section#portada h3 {
+    display: inline;
+    vertical-align: middle;
+}
+
+.reveal section#portada h2 {
+    font-size: 10vh;
+    font-weight:bold;
+}
+
+
+.reveal section#portada h3,
+.reveal section#portada h1 span.coma{
+    font-size: 4.5vh;
+}
+
+.reveal section#portada h1 span.coma{
+    line-height: 0em;
+}
+
+.reveal section#portada header {
+    padding-bottom: 1em;
+}
+
+.reveal section#portada div.data {
+    width: 50vh;
+    display: inline-block;
+    float:right;
+    
+}
 
 .reveal section#portada p {
 	font-size: 3vh;
 	display:block;
-	text-align: right;
+	text-align:left;
 }
 
 .reveal section#portada p span.author {
 	font-weight: bold;
 }
+
+
 
 footer {
 	position: absolute;
@@ -125,7 +160,7 @@ footer>div.grey {
 
 footer>div.art {
 	background: transparent no-repeat;
-	background-image: url("../img/background-art.png");
+	background-image: url("../img/l10n.png");
 	height: 180px;
 	width: 940px;
 	margin: auto;
