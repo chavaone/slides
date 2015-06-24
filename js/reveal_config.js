@@ -17,6 +17,17 @@ Reveal.initialize({
         { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
         { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
         { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-        { src: 'reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+       // { src: 'reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
 });
+
+Reveal.addEventListener( 'hide-footer', function() {
+    var grass = document.getElementById("grass");
+    grass.style.display = "none";
+}, false );
+
+Reveal.addEventListener( 'show-footer', function() {
+    var grass = document.getElementById("grass");
+    grass.style.display = "block";
+}, false );
+

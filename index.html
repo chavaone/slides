@@ -11,7 +11,7 @@
     <meta name="description" content="GNOMECAT, un editor de ficheiros GNU Gettext para o proxecto GNOME">
     <meta name="author" content="Marcos Chavarría Teijeiro">
 
-    <link rel="stylesheet" href="reveal/css/reveal.min.css">
+    <link rel="stylesheet" href="reveal/css/reveal.css">
     <link rel="stylesheet" href="reveal/css/theme/simple.css" id="theme">
     <link rel="stylesheet" href="css/monokai.css">
     <link rel="stylesheet" href="css/style.css">
@@ -39,15 +39,16 @@
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
         <section>
-          <section>
+          <section id="index">
 	    <h1>Índice</h1>
 	    <ol>
-              <li>Introducción</li>
-	      <li>Metodoloxía</li>
-	      <li>Planificación</li>
-	      <li>Diseño e Implementación</li>
-	      <li>Demo</li>
-	      <li>Conclusións e Traballo Futuro</li>
+              <li>1.&nbsp;Introdución</li>
+	      <li>2.&nbsp;Metodoloxía</li>
+	      <li>3.&nbsp;Planificación</li>
+	      <li>4.&nbsp;Desenvolvemento</li>
+	      <li>5.&nbsp;Demo</li>
+	      <li>6.&nbsp;Conclusións</li>
+	      <li>7.&nbsp;Traballo&nbsp;Futuro</li>
 	    </ol>
           </section>
 	</section>
@@ -56,7 +57,7 @@
 
         <section>
           <section>
-            <h1>GNU GetText</h1>
+            <h2>Introdución: GNU GetText</h2>
 	    <pre style="display:inline-block; width: 40vh;">program.c<code class="c">[...]
 printf (_("Hello World!"));
 [...]</code></pre>
@@ -66,6 +67,9 @@ printf (_("Hello World!"));
 msgid "Hello World!"
 msgstr ""
 [...]</code></pre>
+	    <aside class="notes">
+	      Gettext foi creado nos anos 90.
+	    </aside>
           </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
@@ -83,9 +87,16 @@ msgstr ""
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
          <section>
-	   <h2>GNOME</h2>
-	   <img alt="" height="500vh" src="img/gnome316.png"/>
+	   <h2>Introdución: GNOME</h2>
+	   <img alt="" height="450vh" src="img/gnome316.png"/>
          </section>
+
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+
+          <section>
+	    <img height="600vh" style="padding:0em;margin: 0em auto;" alt="" src="img/guadec2012.jpg"/>
+	    <p style="font-size:0.4em; word-spacing:0.1em;">Foto de Ana Rey (CC BY-SA)</p>
+	  </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
@@ -100,10 +111,8 @@ msgstr ""
           </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
           <section>
-	    <img height="600vh" style="padding:0em;margin: 0em auto;" alt="" src="img/guadec2012.jpg"/>
-	    <p style="font-size:0.4em; word-spacing:0.1em;">Foto de Ana Rey (CC BY-SA)</p>
+	    <img style="border:none;" height="500vh" alt="" src="img/gsoc.jpg"/>
 	  </section>
         </section>
 
@@ -153,258 +162,86 @@ msgstr ""
 	    <p>5 Iteracións</p>
 	    <p>325 horas</p>
           </section>
+
+	  <section>
+	    <h4>GUADEC 2013 en Brno (Rep. Checa)</h4>
+	    <h4>X GUADEC Hispana en Madrid</h4>
+	    <h4>GUADEC 2014 en Strasbourg (Francia)</h4>
+	    <img alt="" style="border:none" height="375vh" src="img/guadec.jpg"/>
+	  </section>
+
 	</section>
 
+	
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-        <section>
+        <section data-state="show-footer">
 	  <section>
 	    <h1>Desenvolvemento</h1>
 	  </section>
+
+	  <section>
+	    <h2>Análise</h2>
+	    <p>Listas de correos de equipos de traductores</p>
+	    <p>Programas existentes</p>
+	  </section>
+	  
+	  <section>
+	    <h2>Módulo de Ficheiros</h2>
+	    <p>Centrado en GetText pero con un deseño estensible</p>
+	    <p>Consellos</p>
+	    <p>Pistas</p>
+	    <h2>Módulo de Linguaxes</h2>
+	    <p>Instancias das linguaxes con información adicional</p>
+	  </section>
+
+	  <section>
+	    <h2>Interface de Usuario</h2>
+	    <p>Varias versións</p>
+	    <p>Seguimos as Guías de Interfaces Humanas De GNOME</p>
+	  </section>
 	</section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
         <section>
-	  <section>
+	  <section data-state="show-footer">
 	    <h1>DEMO</h1>
 	  </section>
 
-	  <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 	 
-	  <section>
-	    <video src=""></video>
-	  </section>
+	 <section data-state="hide-footer" data-background="black" data-background-video="video/DemoPFC.webm"></section>
 	</section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
-          <section>
+          <section  data-state="show-footer">
+	    <section >
+	      <h1>Conclusións</h1>
+	    </section>
+
 	    <section>
-	      <h1>Conclusións e Traballo Futuro</h1>
+	      <h1>Traballo Futuro</h1>
 	    </section>
           </section>
 
-
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h2>Solucionando el bug...</h2>
-
-            <h4>Código Fuente</h4>
-            <pre><code class="lang-javascript">[...]
-// Create an image
-this._image = new Gtk.Image ({ file: "gnome-image.jpg" });
-[...]</code></pre>
-            <h4>Repositorio</h4>
-            <pre><code>ch01@lura ~/newcomers-tutorial » ls
-COPYING  gnome-image.png  hello.js  newcomers-tutorial.doap
-  README</code></pre>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h2>Solución</h2>
-            <pre><code class="lang-javascript">[...]
-// Create an image
-this._image = new Gtk.Image ({ file: "gnome-image.png" });
-[...]</code></pre>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h3>Fixed!!</h3>
-            <img src="img/captura_newcommers_program_sin_bug.png" alt="">
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h1>Commit!!</h1>
-            <pre><code>
-ch01@lura ~/newcomers-tutorial » git commit -a
-
-</code></pre>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-          <h2>Mensaje de Commit</h2>
-            <pre><code>tag: Short explanation of the commit
-
-Longer explanation explaining exactly what's changed and why,
-whether any external or private interfaces changed, what bugs
-were fixed (with bug tracker reference if applicable) and so
-forth. Be concise but not too brief.
-
-https://bugzilla.gnome.org/show_bug.cgi?id=XXXXXX</code></pre>
-          <a href="https://wiki.gnome.org/Git/CommitMessages">Guidelines for Commit Messages</a>
-
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h3>Crear el Parche</h3>
-            <pre><code>
-ch01@lura ~/newcomers-tutorial » git format-patch HEAD~1
-</code></pre>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <pre><code class="nohightlight">From 339555f293b51b10730dd21660491462ebc07848 Mon Sep 17 00:00:00 2001
-From: MrX &lt;mrx@gnome.org&gt;
-Date: Sun, 5 Jan 2014 14:45:48 +0530
-Subject: [PATCH] Fixed the problem with loading of image
-
-I have substitute the image file extension.
-
-https://bugzilla.gnome.org/show_bug.cgi?id=721546
----
- hello.js | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
-
-diff --git a/hello.js b/hello.js
-index 39fe8b9..a7b1950 100755
---- a/hello.js
-+++ b/hello.js
-@@ -39,7 +39,7 @@ const WelcomeToTheGrid = new Lang.Class({
-         this._grid = new Gtk.Grid ({ row_spacing: 20 });
-
-         // Create an image
--        this._image = new Gtk.Image ({ file: "gnome-image.jpg" });
-+        this._image = new Gtk.Image ({ file: "gnome-image.png" });
-
-         // Create a second image using a stock icon
-         this._icon = new Gtk.Image ({ stock: 'gtk-about' });
---
-1.8.3.2</code></pre>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h2>Subir el parche</h2>
-            <ul>
-              <li>Enlace <em>Add an attachment</em> en Bugzilla</li>
-              <li>Git-bz (<a href="http://git.fishsoup.net/man/git-bz.html">info</a>)</li>
-            </ul>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h2>Revisión del parche</h2>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <img class="stretch" src="img/captura_revision.png" alt="">
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h2>Cosas a tener en cuenta</h2>
-            <ul>
-              <li><em>Code Style</em></li>
-              <li>Documentación (comentarios)</li>
-              <li>Tests</li>
-            </ul>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <img style="border: medium none;" src="img/gnome-balloon.png" alt="">
-          </section>
-        </section>
-
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
         <section>
-          <section>
-            <h1>Más allá...</h1>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h1>Buscando qué hacer</h1>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h1><em>gnome-love</em> keyword</h1>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h1>GNOME Goals</h1>
-            <ul>
-              <li>Pequeñas tareas aplicables a varios módulos</li>
-              <li>Tienen un objetivo concreto</li>
-              <li>No todo es código...</li>
-              <li><a href="https://wiki.gnome.org/action/show/Initiatives/GnomeGoals?action=show&redirect=GnomeGoals">GNOME Goals</a></li>
-            </ul>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h2>Dependencias...</h2>
-            <h3>JHBuild</h3>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h2>No todo es programar...</h2>
-            <ul>
-              <li>Documentación</li>
-              <li>Traducción</li>
-              <li>Diseño</li>
-            </ul>
-          </section>
+          <h1>Grazas!</h1>
         </section>
 
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-        <section>
-          <h1>¿<b>Preguntas</b> y/o <b>reclamaciones</b>?</h1>
-        </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-        <section>
-          <h1 class="thankyou">¡Gracias por venir!</h1>
-          <!--
-          <ul id="contact">
-            <li id="web"><span class="icon-earth"></span><a href="http://aquelando.info">aquelando.info</a></li>
-            <li id="twitter"><span class="icon-twitter"></span><a href="twitter.com/chavarria1991">@chavarria1991</a></li>
-            <li id="github"><span class="icon-github"></span><a href="http://github.com/chavaone">chavaone</a></li>
-          </ul>
-          -->
-        </section>
 
     </div>
 
-    <footer class="background">
+    <footer id="grass" class="background">
       <div class="art"></div>
       <div class="grass"></div>
       <div class="grey"></div>
     </footer>
 
     <script src="reveal/lib/js/head.min.js"></script>
-    <script src="reveal/js/reveal.min.js"></script>
+    <script src="reveal/js/reveal.js"></script>
     <script src="js/reveal_config.js"></script>
 
   </body>

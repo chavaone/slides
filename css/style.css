@@ -18,7 +18,8 @@
 /* PORTADA */
 
 .reveal section#portada h1 {
-    font-size: 18vh;
+    font-size: 17vh;
+    line-height: 1;
 }
 
 .reveal section#portada img {
@@ -34,10 +35,11 @@
 .reveal section#portada h3 {
     display: inline;
     vertical-align: middle;
+    line-height:1;
 }
 
 .reveal section#portada h2 {
-    font-size: 10vh;
+    font-size: 11vh;
     font-weight:bold;
 }
 
@@ -52,14 +54,13 @@
 }
 
 .reveal section#portada header {
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
 
 .reveal section#portada div.data {
     width: 50vh;
     display: inline-block;
     float:right;
-    
 }
 
 .reveal section#portada p {
@@ -70,6 +71,16 @@
 
 .reveal section#portada p span.author {
 	font-weight: bold;
+}
+
+.reveal section#index ol {
+    text-align:center;
+}
+
+.reveal section#index ol li {
+    font-size: 1.6em;
+    display: inline;
+    padding-right: 0.7em;
 }
 
 
