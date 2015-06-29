@@ -27,6 +27,7 @@
             <h1>GNOMECAT<span class="coma">,</span></h1>
 	    <h3>un editor de ficheiros</h3>
 	    <h2>GNU GetText</h2>
+	    <br/>
             <h3>para o proxecto</h3>
 	    <h2>&nbsp;<img src="img/GnomeLogoHorizontal.svg" alt=""></h2>
 	  </header>
@@ -55,47 +56,171 @@
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
-        <section>
+        <section id="intro">
           <section>
             <h2>Introdución: GNU GetText</h2>
-	    <pre style="display:inline-block; width: 40vh;">program.c<code class="c">[...]
-printf (_("Hello World!"));
-[...]</code></pre>
-	    <pre style="display:inline-block; width: 40vh;">program.po<code>[...]
-#: helloworld.c:14
+	    <p>Solución para internacionalización e localización</p>
+            <p>Amplamente empregada para aplicativos de escritorio</p>
+	    <p>Moi completa</p>
+	  </section>
+
+	  
+	  <section class="gettext"  data-transition="fade">
+	    <img alt="" height="90px" class="show" src="img/c-file.svg"/>
+	    <img alt="" height="60px"  class="hide" src="img/flecha-xgettext.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/pot-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-msginit.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-traducir.svg"/>
+	    <img alt="" height="90px" class="hide"  src="img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-msgfmt.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/mo-file.svg"/>
+	    <h3>Adaptar Código Fonte</h3>
+	    <pre>demo.c<code class="c">int main () {
+    [...]
+
+    setlocale (LC_ALL, "");
+    bindtextdomain ("demo", "/usr/local/share/locale");
+    textdomain ("demo");
+
+    //Translators: This is a comment.
+    printf (gettext("Enter your details.\n"));
+    printf (gettext("Name:"));
+    scanf ("%s", name);
+    printf (gettext("Number of children:"));
+    scanf ("%i", &number);
+    printf (ngettext ("Hi %s, you have one child.\n",
+		      "Hi %s, you have %i children.\n", number),
+	    name, number);
+}</code></pre>
+          </section>
+
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+
+          <section  class="gettext" data-transition="fade">
+	    <img alt="" height="90px" class="hide" src="img/c-file.svg"/>
+	    <img alt="" height="60px" class="show" src="img/flecha-xgettext.svg"/>
+	    <img alt="" height="90px" class="show" src="img/pot-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-msginit.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-traducir.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-msgfmt.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/mo-file.svg"/>
+	    <h3>Extraer as cadeas (xgettext)</h3>
+	    <pre>demo.pot<code>#. Comment from developers.
+#: demo.c:18
 #, c-format
-msgid "Hello World!"
+msgid ""
+"Enter your details.\n"
 msgstr ""
-[...]</code></pre>
-	    <aside class="notes">
-	      Gettext foi creado nos anos 90.
-	    </aside>
-          </section>
+
+#: demo.c:22
+#, c-format
+msgid "Hi %s, you have one child.\n"
+msgid_plural "Hi %s, you have %i children.\n"
+msgstr[0] ""
+msgstr[1] ""</code></pre>
+	  </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
-          <section>
-            <h2>Característica de GetText</h2>
-            <ul>
-              <li>Soporte avanzado de plurais</li>
-              <li>Traducións difusas</li>
-              <li>Comentarios</li>
-	      <li>[...]</li>
-            </ul>
-          </section>
+	  <section  class="gettext" data-transition="fade">
+	    <img alt="" height="90px" class="hide" src="img/c-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-xgettext.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/pot-file.svg"/>
+	    <img alt="" height="60px" class="show" src="img/flecha-msginit.svg"/>
+	    <img alt="" height="90px" class="show" src="img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-traducir.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-msgfmt.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/mo-file.svg"/>
+	    <h3>Inicializar ficheiro PO (msginit)</h3>
+	    <pre>es_ES.po<code>#. Comment from developers.
+#: demo.c:18
+#, c-format
+msgid ""
+"Enter your details.\n"
+msgstr ""
+
+#: demo.c:22
+#, c-format
+msgid "Hi %s, you have one child.\n"
+msgid_plural "Hi %s, you have %i children.\n"
+msgstr[0] ""
+msgstr[1] ""</code></pre>
+	  </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
-         <section>
-	   <h2>Introdución: GNOME</h2>
-	   <img alt="" height="450vh" src="img/gnome316.png"/>
-         </section>
+	  <section class="gettext" data-transition="fade">
+	    <img alt="" height="90px" class="hide" src="img/c-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-xgettext.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/pot-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-msginit.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
+	    <img alt="" height="60px" class="show" src="img/flecha-traducir.svg"/>
+	    <img alt="" height="90px" class="show" src="img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-msgfmt.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/mo-file.svg"/>
+	    <h3>Traducir</h3>
+	    <pre>es_ES.po<code>#. Comment from developers.
+# Comentario de los traductores.
+#: demo.c:18
+#, fuzzy, c-format
+msgid ""
+"Enter your details.\n"
+msgstr ""
+"Introduza sus datos.\n"
+
+#: demo.c:22
+#, c-format
+msgid "Hi %s, you have one child.\n"
+msgid_plural "Hi %s, you have %i children.\n"
+msgstr[0] "Hola %s, tienes un hijo.\n"
+msgstr[1] "Hola %s, tienes %i hijos.\n"</code></pre>
+	  </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
-          <section>
-	    <img height="600vh" style="padding:0em;margin: 0em auto;" alt="" src="img/guadec2012.jpg"/>
-	    <p style="font-size:0.4em; word-spacing:0.1em;">Foto de Ana Rey (CC BY-SA)</p>
+	  <section  class="gettext" data-transition="fade">
+	    <img alt="" height="90px" class="hide" src="img/c-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-xgettext.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/pot-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-msginit.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
+	    <img alt="" height="60px" class="show" src="img/flecha-traducir.svg"/>
+	    <img alt="" height="90px" class="show" src="img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-msgfmt.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/mo-file.svg"/>
+	    <h3>Traducir</h3>
+	    <p>Os Ficheiros PO son texto plano</p>
+	    <p>Podense editar con:</p>
+	    <ul>
+	      <li>Editor de textos: vim, gedit, kate...</li>
+	      <li class="fragment"><p>Ferramenta CAT: editor gráfico, axudas a tradución...</p>
+		<ul class="fragment">
+		  <li>GTranslator</li>
+		  <li>Virtaal</li>
+		  <li>...</li>
+		</ul>
+	      </li>
+	    </ul>
+	  </section>
+
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+
+	  <section  class="gettext" data-transition="fade">
+	    <img alt="" height="90px" class="hide" src="img/c-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-xgettext.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/pot-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-msginit.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="img/flecha-traducir.svg"/>
+	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
+	    <img alt="" height="60px" class="show" src="img/flecha-msgfmt.svg"/>
+	    <img alt="" height="90px" class="show" src="img/mo-file.svg"/>
+	    <h3>Xerar ficheiro MO</h3>
 	  </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
@@ -112,7 +237,19 @@ msgstr ""
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
           <section>
-	    <img style="border:none;" height="500vh" alt="" src="img/gsoc.jpg"/>
+	    <img height="300vh" style="box-shadow: none; display:inline-block; border:none; padding: 0.5em;" src="img/gsoc2013.png"/>
+	    <img height="300vh" style="box-shadow: none; display:inline-block; border:none; padding: 0.5em;" src="img/gsoc2014.png"/>
+	  </section>
+
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+
+	  <section>
+	    <h2>GNOMECAT</h2>
+	    <ul>
+	      <li>Nova ferramenta CAT para GNOME.</li>
+	      <li>Simple pero moi extensible.</li>
+	      <li>Escrita nunha linguaxe amigable: Vala.</li>
+	    </ul>
 	  </section>
         </section>
 
@@ -122,18 +259,11 @@ msgstr ""
           <section>
             <h2>Metodoloxía</h2>
 	    <h1>eXtreme Programming</h1>
-          </section>
-
-<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-
-          <section>
-            <h2>Metodoloxía</h2>
-            <ul>
-              <li>Código Aberto</li>
-              <li>Deseño Simple</li>
-	      <li>Estandares de Programación</li>
-	      <li>Cliente no Sitio</li>
-	      <li>Bug Tracking</li>
+            <p>Código Aberto</p>
+            <p>Deseño Simple</p>
+	    <p>Estandares de Programación</p>
+	    <p>Cliente no Sitio</p>
+	    <p>Bug Tracking</p>
             </ul>
           </section>
 	</section>
@@ -143,8 +273,6 @@ msgstr ""
         <section>
           <section>
             <h1>Planificación</h1>
-	    <img height="300vh" style="box-shadow: none; display:inline-block; border:none; padding: 0.5em;" src="img/gsoc2013.png"/>
-	    <img height="300vh" style="box-shadow: none; display:inline-block; border:none; padding: 0.5em;" src="img/gsoc2014.png"/>
           </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
@@ -163,13 +291,6 @@ msgstr ""
 	    <p>325 horas</p>
           </section>
 
-	  <section>
-	    <h4>GUADEC 2013 en Brno (Rep. Checa)</h4>
-	    <h4>X GUADEC Hispana en Madrid</h4>
-	    <h4>GUADEC 2014 en Strasbourg (Francia)</h4>
-	    <img alt="" style="border:none" height="375vh" src="img/guadec.jpg"/>
-	  </section>
-
 	</section>
 
 	
@@ -187,10 +308,28 @@ msgstr ""
 	  
 	  <section>
 	    <h2>Módulo de Ficheiros</h2>
-	    <p>Centrado en GetText pero con un deseño estensible</p>
-	    <p>Consellos</p>
-	    <p>Pistas</p>
+	    <img style="margin:0px; border:none; box-shadow:none;" alt="" width="700vh" src="img/pofile.png"/>
+	    <p style="margin-top:5px;">GettextPo &bull; Deseño estensible &bull; Consellos &bull; Pistas</p>
+	  </section>
+	  
+	  <section>
 	    <h2>Módulo de Linguaxes</h2>
+	    <pre><code class="json">[...]
+  {
+    "expression" : "nplurals=2; plural=(n > 1);",
+    "number_of_plurals" : 2,
+    "tags" : [
+      {
+        "number" : 0,
+        "tag" : "Equal to 0 or 1"
+      },
+      {
+        "number" : 1,
+        "tag" : "Greater than 1"
+      }
+    ]
+  },
+  [...]</code></pre>
 	    <p>Instancias das linguaxes con información adicional</p>
 	  </section>
 
@@ -210,7 +349,7 @@ msgstr ""
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 	 
-	 <section data-state="hide-footer" data-background="black" data-background-video="video/DemoPFC.webm"></section>
+	 <section data-state="hide-footer" data-background="black" data-background-video="video/demo2.webm"></section>
 	</section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
@@ -218,10 +357,21 @@ msgstr ""
           <section  data-state="show-footer">
 	    <section >
 	      <h1>Conclusións</h1>
+	      <p>Creación dun aplicativo simple pero extensible.</p>
+	      <p>Experiencia no <em>stack</em> de GNOME e con bibliotecas en desenvolvemento.</p>
 	    </section>
+
+	  <section>
+	    <h4>GUADEC 2013 en Brno (Rep. Checa)</h4>
+	    <h4>X GUADEC Hispana en Madrid</h4>
+	    <h4>GUADEC 2014 en Strasbourg (Francia)</h4>
+	    <img alt="" style="border:none" height="375vh" src="img/guadec.jpg"/>
+	  </section>
 
 	    <section>
 	      <h1>Traballo Futuro</h1>
+	      <p>Implicar a máis desenvolvedores no proxecto.</p>
+	      <p>Implementación dunha <b>memoria de tradución</b> e <b>integración con Damned Lies</b>.</p>
 	    </section>
           </section>
 

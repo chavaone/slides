@@ -83,6 +83,22 @@
     padding-right: 0.7em;
 }
 
+.reveal section#intro img.show {
+    border: none;
+    box-shadow: none;
+    margin: 0em;
+}
+
+.reveal section#intro img.hide  {
+    border: none;
+    box-shadow: none;
+    margin: 0em;
+    opacity: 0.2;
+}
+
+.reveal section#intro section.gettext {
+    height: 600px;
+}
 
 
 footer {
