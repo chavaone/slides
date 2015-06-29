@@ -100,6 +100,12 @@
     height: 600px;
 }
 
+.reveal section div.spin-block {
+
+    display:inline-block;
+    width:30%;
+}
+
 
 footer {
 	position: absolute;
