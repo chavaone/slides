@@ -1177,29 +1177,27 @@
     </dia:object>
     <dia:object type="UML - Realizes" version="1" id="O13">
       <dia:attribute name="obj_pos">
-        <dia:point val="44.4556,27.65"/>
+        <dia:point val="44.4556,26.55"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="43.7556,17.5005;52.8813,28.5"/>
+        <dia:rectangle val="43.7556,17.5005;52.8813,27.4"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="44.4556,27.65"/>
-        <dia:point val="43.8056,27.65"/>
-        <dia:point val="43.8056,20.8"/>
-        <dia:point val="52.8313,20.8"/>
-        <dia:point val="52.8313,17.5505"/>
+        <dia:point val="44.4556,26.55"/>
+        <dia:point val="44.4556,21.6502"/>
+        <dia:point val="52.8313,21.6502"/>
+        <dia:point val="52.8313,17.5504"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
-        <dia:enum val="0"/>
         <dia:enum val="1"/>
         <dia:enum val="0"/>
         <dia:enum val="1"/>
       </dia:attribute>
       <dia:attribute name="orth_autoroute">
-        <dia:boolean val="false"/>
+        <dia:boolean val="true"/>
       </dia:attribute>
       <dia:attribute name="line_colour">
         <dia:color val="#000000"/>
@@ -1214,7 +1212,7 @@
         <dia:string>##</dia:string>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O10" connection="8"/>
+        <dia:connection handle="0" to="O10" connection="1"/>
         <dia:connection handle="1" to="O9" connection="8"/>
       </dia:connections>
     </dia:object>
