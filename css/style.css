@@ -71,3 +71,8 @@ li span.gr-control {
 .reveal em {
     font-weight: bold;
 }
+
+.reveal p {
+    margin: 15px 0px;
+    line-height: 1;
+}
