@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Introdución á Programación</title>
+
+    <meta name="description" content="Didác. Matemáticas Análise Artigo: Las demostraciones den la didáctica de las MAtemáticas. Una experiencia con alumnos de 3º ESO. Sanchez Freire e Gil Pascual (2014)">
+    <meta name="author" content="Marcos Chavarría Teijeiro">
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/moon.css" id="theme">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="reveal">
+
+      <div class="slides">
+	<section id="portada">
+	  <h1>Introdución á Programación</h1>
+	</section>
+	<section>
+	  <section>
+	    <h1>O robot e o labirinto</h1>
+    <p>Conectase ao principio do nivel e debemos programalo para que chegue ao final</p>
+<p>Dúas formas, puzzle (diagrama de fluxo), linguaxe robot (código)</p>
+<img src="img/robot.png" width="25%"/>
+	  </section>
+	</section>
+	<section>
+	  <section>
+	    <h2>Sobre 1</h2>
+	    <ul>
+	      <li>Avanzar</li>
+	      <li>Deterse</li>
+	      <li>Activar</li>
+	      <li>Xirar</li>
+	      <li><em>Flechitas</em></li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Avanzar, Deterse e Activar</h3>
+	    <p>Son operacións que causan un efecto no robot.</p>
+	    <ul>
+	      <li>Avanzar -> o robot avanza unha casilla.</li>
+	      <li>Deterse -> o robot espera.</li>
+	      <li>Activar -> o robot activa un elemento do labirinto.</li>
+	    </ul>
+	    <img alt="" width="60%" src="img/avanzar-deterse-activar.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Xirar</h3>
+	    <p>Tamén é unha operación. O robot xirará 90º nun sentido.</p>
+	    <p>Este sentido indicaselle proporcionandolle a operación un parámetro. Este paramentro é un valor.
+	      Os valores que acepta a operación <em>xirar</em> son <em>"Esquerda"</em> e "Dereita".</p>
+	    <img alt="" width="60%" src="img/xirar.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Como se escribe en <em>linguaxe robot</em>?</h3>
+	    <img alt="" width="25%" src="img/avanzar.jpg"/>
+	    <pre><code>avanzar()</code></pre>
+	    <img alt="" width="25%" src="img/xirar-dereita.jpg"/>
+	    <pre><code>xirar("dereita")</code></pre>
+	  </section>
+	  <section>
+	    <h3><em>Flechiñas</em></h3>
+	    <p>As flechas permiten secuencializar as operacións e que unhas se executen despois doutras.</p>
+	    <img alt="" src="img/mapa1.png"/><img width="25%" alt="" src="img/mapa1-foto.jpg"/>
+	  </section>
+	  <section>
+	    <h3>E como se escribe en <em>linguaxe robot</em>?</h3>
+	    <pre><code>avanzar()
+xirar("esquerda")
+avanzar()</code></pre>
+	    <img alt="" width="25%" src="img/mapa1-foto.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Problema 1</h3>
+	    <img alt="" src="img/mapa2.png"/>
+	  </section>
+	  <section>
+	    <h3>Problema 1: Solución</h3>
+	    <img alt="" width="30%" src="img/mapa2-foto.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Problema 1: Código</h3>
+	    <pre><code>avanzar()
+avanzar()
+xirar("dereita")
+avanzar()
+xirar("esquerda")
+avanzar()</code></pre>
+	  </section>
+	</section>
+	<section>
+	  <section>
+	    <h2>Sobre 2</h2>
+	    <ul>
+	      <li>Sentencias Condicionales.</li>
+	      <li>mirar</li>
+	      <li>=</li>
+	      <li>≠</li>
+	      <li>valores
+		<ul>
+		  <li>"parede"</li>
+		  <li>"camiño"</li>
+		  <li>"trampa activada"</li>
+		  <li>"trampa desactivada"</li>
+		  <li>certo</li>
+		  <li>falso</li>
+		</ul>
+	      </li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>certo e falso</h3>
+	    <p>Son valores que indican que algo é certo ou falso</p>
+	    <img alt="" width="65%" src="img/certo-falso.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Mirar</h3>
+	    <p>Mirar é unha operación que non ten ningún efecto externo pero que devolve un valor que indica o que hai na seguinte posición.</p>
+	    <p>Algún dos valores que pode devolver mirar son:
+	      <ul>
+		<li>"parede"</li>
+		<li>"camiño"</li>
+		<li>"trampa activada"</li>
+		<li>"trampa desactivada"</li>
+	    </ul></p>
+	    <img alt="" width="85%" src="img/mirar.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Sentencias condicionales</h3>
+	    <p>Permiten executar unha serie de operacións se unha condición que se lle proporciona é certa.</p>
+	    <img alt="" width="30%" src="img/se-certo.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Código</h3>
+	    <pre><code>if True:
+    avanzar()
+avanzar()</code></pre>
+	  </section>
+	  <section>
+	    <h3>E as condicións?</h3>
+	    <p>As condicións poden ser os valores certo e falso ou comparacións empregando = ou ≠.</p>
+	    <img alt="" width="65%" src="img/condicions.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Exemplo: esquerda ou dereita</h3>
+	    <img alt="" src="img/mapa3.png"/>
+	  </section>
+	  <section>
+	    <h3>Exemplo: esquerda ou dereita(solución)</h3>
+	    <img alt="" width="35%" src="img/mapa3-foto.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Exemplo: esquerda ou dereita (código)</h3>
+	    <pre><code>avanzar()
+xirar("dereita")
+if mirar() == "parede":
+    xirar("esquerda")
+    xirar("esquerda")
+avanzar()</code></pre>
+	  </section>
+	  <section>
+	    <h3>Problema 2</h3>
+	    <img alt="" width="25%" src="img/mapa4.png"/>
+	  </section>
+	  <section>
+	    <h3>Problema 2: solución</h3>
+	    <img alt="" width="50%" src="img/mapa4-foto.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Problema 3: código</h3>
+	    <pre><code>avanzar()
+if mirar == "trampa activada":
+    activar()
+avanzar()
+avanzar()
+xirar("dereita")
+avanzar()</code></pre>
+	  </section>
+	</section>
+	<section>
+	  <section>
+	    <h3>Sobre 3</h3>
+	    <ul>
+	      <li>Sentencias repetitivas</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Sentencias repetitivas</h3>
+	    <p>Executan unha serie de instrucións un determinado número de veces mentras se cumpra unha condición.</p>
+	    <p><ol>
+		<li>Comproban a condición.</li>
+		<li>Se non se cumpre pasa a executar as seguintes instrucións (rama non).</li>
+		<li>Se se cumpre executa as instrucións da rama SI. Logo, volve ao paso 1.</li>
+	    </ol></p>
+	  </section>
+	  <section>
+	    <h3>Exemplo</h3>
+	    <img alt="" width="75%" src="img/mentras-certo.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Exemplo: código</h3>
+	    <pre><code>while True:
+   avanzar()</code></pre>
+	  </section>
+	  <section>
+	    <h3>Exemplo 2</h3>
+	    <img alt="" width="70%" src="img/mentras-caminos.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Exemplo 2: recorre os camiños...</h3>
+	    <img alt="" src="img/mapa5.png"/>
+	  </section>
+	  <section>
+	    <h3>Problema 3</h3>
+	    <p>Hai unha trampa no medio do mapa pero non hai botón. Teremos que esperar a que se desactive sola.</p>
+	    <img alt="" width="110" src="img/mapa6.png"/>
+	  </section>
+	  <section>
+	    <h3>Problema 3: Solución</h3>
+	    <img alt="" width="55%" src="img/mapa6-foto.jpg"/>
+	  </section>
+	  <section>
+	    <h3>Problema 3: Código</h3>
+	    <pre><code>avanzar()
+avanzar()
+while mirar() == "trampa activada":
+    deterse()
+avanzar()
+avanzar()</code></pre>
+	  </section>
+	</section>
+	<section>
+	  <h3>Problema xenérico...</h3>
+	</section>
+	<section>
+	  <h3>Código</h3>
+	  <pre><code>while True:
+    if mirar() == camiño:
+        avanzar()
+    if mirar() == parede:
+        xirar("dereita")
+        if mirar() == parede:
+	    xirar("esquerda")
+	    xirar("esquerda")
+    if mirar() == "trampa activada":
+        activar()
+    if mirar() == "trampa desactivada":
+        avanzar()</code></pre>
+	</section>
+      </div>
+    </div>
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script src="js/reveal_config.js"></script>
+
+  </body>
+</html>
