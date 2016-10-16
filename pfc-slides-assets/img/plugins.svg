@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="37cm" height="25cm" viewBox="630 169 721 495" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="1220" y="358" width="112.15" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1220" y="358" width="112.15" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1276.08" y="377">Application</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1204" y="453" width="146.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1204" y="453" width="146.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1277.05" y="472">PluginManager</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1276.08,387.007 1276.08,419.5 1277.05,419.5 1277.05,451.993 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1280.08" y="399.007">-app</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1280.08" y="415.007">1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1281.05" y="431.993">-manager</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1281.05" y="447.993">1</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="816.562" y="509" width="311" height="154"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="816.562" y="509" width="311" height="154"/>
+    <rect style="fill: #ffffff" x="816.562" y="489" width="40" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="816.562" y="489" width="40" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="818.562" y="504">Peas</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1014" y="610" width="71.55" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1014" y="610" width="71.55" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1049.77" y="629">Engine</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="874.562" y="190" width="260" height="201"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="874.562" y="190" width="260" height="201"/>
+    <rect style="fill: #ffffff" x="874.562" y="170" width="88.7" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="874.562" y="170" width="88.7" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="876.562" y="185">GNOMECATLib</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="995" y="205" width="110.1" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="995" y="205" width="110.1" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1050.05" y="221">&lt;&lt;interface&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1050.05" y="240">API</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1123.34,227 1170.05,227 1170.05,372 1218.99,372 "/>
+    <polygon style="fill: #ffffff" points="1123.34,219 1107.34,227 1123.34,235 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1123.34,219 1107.34,227 1123.34,235 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="896" y="352" width="82.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="896" y="352" width="82.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="937.3" y="371">Checker</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="994.25" y="322" width="124.75" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="994.25" y="322" width="124.75" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="1056.63" y="341">HintProvider</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="834.062" y="531" width="110.1" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="834.062" y="531" width="110.1" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="889.112" y="547">&lt;&lt;interface&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="889.112" y="566">Activable</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="968.1" y="532" width="141.9" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="968.1" y="532" width="141.9" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1039.05" y="548">&lt;&lt;interface&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1039.05" y="567">ExtensionBase</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="815.826,553 785.562,553 785.562,366 896,366 "/>
+    <polygon style="fill: #ffffff" points="815.826,561 831.826,553 815.826,545 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="815.826,561 831.826,553 815.826,545 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="889.112,512.764 889.112,433.004 1056.63,433.004 1056.63,351.007 "/>
+    <polygon style="fill: #ffffff" points="881.112,512.764 889.112,528.764 897.112,512.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="881.112,512.764 889.112,528.764 897.112,512.764 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1039.05,513.764 1039.05,487 940.562,487 940.562,459 937.3,459 937.3,380 "/>
+    <polygon style="fill: #ffffff" points="1031.05,513.764 1039.05,529.764 1047.05,513.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1031.05,513.764 1039.05,529.764 1047.05,513.764 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1128.24,554 1161.56,554 1161.56,336 1119,336 "/>
+    <polygon style="fill: #ffffff" points="1128.24,546 1112.24,554 1128.24,562 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1128.24,546 1112.24,554 1128.24,562 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1110.72,624 1277.05,624 1277.05,481 "/>
+    <polygon style="fill: #ffffff" points="1085.55,624 1099.55,619.2 1113.55,624 1099.55,628.8 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1085.55,624 1099.55,619.2 1113.55,624 1099.55,628.8 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="631.562" y="251" width="176.55" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="631.562" y="251" width="176.55" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="719.837" y="270">DemoHintProvider</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="653.562" y="300" width="134.25" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="653.562" y="300" width="134.25" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="720.687" y="319">DemoChecker</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="937.3,333.764 937.3,314 787.812,314 "/>
+    <polygon style="fill: #ffffff" points="929.3,333.764 937.3,349.764 945.3,333.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="929.3,333.764 937.3,349.764 945.3,333.764 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1056.63,303.764 1056.63,265 808.112,265 "/>
+    <polygon style="fill: #ffffff" points="1048.63,303.764 1056.63,319.764 1064.63,303.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1048.63,303.764 1056.63,319.764 1064.63,303.764 "/>
+  </g>
+</svg>
