@@ -12,15 +12,15 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <link rel="stylesheet" href="reveal/css/reveal.css">
-    <link rel="stylesheet" href="reveal/css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
 
     <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="css/monokai.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="tfm-assets/css/monokai.css">
+    <link rel="stylesheet" href="tfm-assets/css/style.css">
 
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
-    <link rel="stylesheet" href="reveal/css/print/pdf.css">
+    <link rel="stylesheet" href="reveal.js/css/print/pdf.css">
 
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
@@ -166,7 +166,7 @@
 
             <section>
                 <h2>Actividades</h2>
-                <img height="350" src="img/gantt.png" alt="gantt">
+                <img height="350" src="tfm-assets/img/gantt.png" alt="gantt">
 
                 <aside class="notes">
                     <ul>
@@ -178,7 +178,7 @@
             <section>
                 <h2>Blogue</h2>
                 <h2>Act. 0: Fotografía</h2>
-                <img height="320" src="img/act0-1.jpg" alt="fotos">
+                <img height="320" src="tfm-assets/img/act0-1.jpg" alt="fotos">
                 <aside class="notes">
                     <ul>
                         <li>de forma transversal blogue &rarr; contido da clase  + recursos adicionais</li>
@@ -192,7 +192,7 @@
             <section>
                 <h2>Act. 1: Que é a xeometría?</h2>
                 <h2>Act. 2: Puntos, rectas e planos</h2>
-                <img height="320" src="img/act1-img3.jpg" alt="rectas">
+                <img height="320" src="tfm-assets/img/act1-img3.jpg" alt="rectas">
                 <aside class="notes">
                     <ul>
                         <li>act1: CAA e CD contidos actitudinais</li>
@@ -205,7 +205,7 @@
 
             <section>
                 <h2>Act. 3: Ángulos</h2>
-                <img height="200" src="img/random.png" alt="random">
+                <img height="200" src="tfm-assets/img/random.png" alt="random">
                 <h2>Act. 4: Mediatriz e Bisectriz</h2>
                 <h2>Act. 5: Exame</h2>
                 <aside class="notes">
@@ -219,7 +219,7 @@
 
             <section>
                 <h2>Act. 6: Polígonos. Triángulos</h2>
-                <img height="320" src="img/trian2.jpg" alt="triangulo">
+                <img height="320" src="tfm-assets/img/trian2.jpg" alt="triangulo">
                 <h2>Act. 7: Suma ángulos do triángulo</h2>
                 <aside class="notes">
                     <ul>
@@ -233,7 +233,7 @@
 
             <section>
                 <h2>Act. 8: Puntos e rectas notables</h2>
-                <img height="320" src="img/circuncentro.png" alt="circuncentro">
+                <img height="320" src="tfm-assets/img/circuncentro.png" alt="circuncentro">
                 <h2>Act. 9: Th. Pitágoras</h2>
                 <aside class="notes">
                     <ul>
@@ -247,7 +247,7 @@
 
             <section>
                 <h2>Act. 10: Cuadriláteros</h2>
-                <img height="320" src="img/cuad2.jpg" alt="cuadrilatero">
+                <img height="320" src="tfm-assets/img/cuad2.jpg" alt="cuadrilatero">
                 <h2>Act. 11: Elementos</h2>
                 <aside class="notes">
                     <ul>
@@ -260,7 +260,7 @@
 
             <section>
                 <h2>Act. 12: Trívial</h2>
-                <img height="320" src="img/socrative.png" alt="trivial">
+                <img height="320" src="tfm-assets/img/socrative.png" alt="trivial">
                 <h2>Act. 13: Exame</h2>
                 <aside class="notes">
                     <ul>
@@ -314,8 +314,8 @@
     </div>
 
 
-    <script src="reveal/lib/js/head.min.js"></script>
-    <script src="reveal/js/reveal.js"></script>
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
 
     <script>
 
@@ -330,12 +330,12 @@
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
         dependencies: [
-            { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-            { src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-            { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-            { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
             //{ src: 'reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
             ]
     });
