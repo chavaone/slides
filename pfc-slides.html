@@ -9,10 +9,10 @@
     <meta name="description" content="GNOMECAT, un editor de ficheiros GNU Gettext para o proxecto GNOME">
     <meta name="author" content="Marcos Chavarría Teijeiro">
 
-    <link rel="stylesheet" href="reveal/css/reveal.css">
-    <link rel="stylesheet" href="reveal/css/theme/simple.css" id="theme">
-    <link rel="stylesheet" href="css/monokai.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="pfc-slides-assets/css/monokai.css">
+    <link rel="stylesheet" href="pfc-slides-assets/css/style.css">
   </head>
 
   <body>
@@ -27,7 +27,7 @@
 	    <h2>GNU GetText</h2>
 	    <br/>
             <h3>para o proxecto</h3>
-	    <h2>&nbsp;<img src="img/GnomeLogoHorizontal.svg" alt=""></h2>
+	    <h2>&nbsp;<img src="pfc-slides-assets/img/GnomeLogoHorizontal.svg" alt=""></h2>
 	  </header>
 	  <div class="data">
             <p>Autor: <span class="author">Marcos Chavarría Teijeiro</span></p>
@@ -62,17 +62,17 @@
 	    <p>Moi completa</p>
 	  </section>
 
-	  
+
 	  <section class="gettext"  data-transition="fade">
-	    <img alt="" height="90px" class="show" src="img/c-file.svg"/>
-	    <img alt="" height="60px"  class="hide" src="img/flecha-xgettext.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/pot-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-msginit.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-traducir.svg"/>
-	    <img alt="" height="90px" class="hide"  src="img/po-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-msgfmt.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/mo-file.svg"/>
+	    <img alt="" height="90px" class="show" src="pfc-slides-assets/img/c-file.svg"/>
+	    <img alt="" height="60px"  class="hide" src="pfc-slides-assets/img/flecha-xgettext.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/pot-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-msginit.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-traducir.svg"/>
+	    <img alt="" height="90px" class="hide"  src="pfc-slides-assets/img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-msgfmt.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/mo-file.svg"/>
 	    <h3>Adaptar Código Fonte</h3>
 	    <pre>demo.c<code class="c">int main () {
     [...]
@@ -96,15 +96,15 @@
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
           <section  class="gettext" data-transition="fade">
-	    <img alt="" height="90px" class="hide" src="img/c-file.svg"/>
-	    <img alt="" height="60px" class="show" src="img/flecha-xgettext.svg"/>
-	    <img alt="" height="90px" class="show" src="img/pot-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-msginit.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-traducir.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-msgfmt.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/mo-file.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/c-file.svg"/>
+	    <img alt="" height="60px" class="show" src="pfc-slides-assets/img/flecha-xgettext.svg"/>
+	    <img alt="" height="90px" class="show" src="pfc-slides-assets/img/pot-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-msginit.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-traducir.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-msgfmt.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/mo-file.svg"/>
 	    <h3>Extraer as cadeas (xgettext)</h3>
 	    <pre>demo.pot<code>#. Comment from developers.
 #: demo.c:18
@@ -124,15 +124,15 @@ msgstr[1] ""</code></pre>
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
 	  <section  class="gettext" data-transition="fade">
-	    <img alt="" height="90px" class="hide" src="img/c-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-xgettext.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/pot-file.svg"/>
-	    <img alt="" height="60px" class="show" src="img/flecha-msginit.svg"/>
-	    <img alt="" height="90px" class="show" src="img/po-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-traducir.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-msgfmt.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/mo-file.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/c-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-xgettext.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/pot-file.svg"/>
+	    <img alt="" height="60px" class="show" src="pfc-slides-assets/img/flecha-msginit.svg"/>
+	    <img alt="" height="90px" class="show" src="pfc-slides-assets/img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-traducir.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-msgfmt.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/mo-file.svg"/>
 	    <h3>Inicializar ficheiro PO (msginit)</h3>
 	    <pre>es_ES.po<code>#. Comment from developers.
 #: demo.c:18
@@ -152,15 +152,15 @@ msgstr[1] ""</code></pre>
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
 	  <section class="gettext" data-transition="fade">
-	    <img alt="" height="90px" class="hide" src="img/c-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-xgettext.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/pot-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-msginit.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
-	    <img alt="" height="60px" class="show" src="img/flecha-traducir.svg"/>
-	    <img alt="" height="90px" class="show" src="img/po-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-msgfmt.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/mo-file.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/c-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-xgettext.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/pot-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-msginit.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/po-file.svg"/>
+	    <img alt="" height="60px" class="show" src="pfc-slides-assets/img/flecha-traducir.svg"/>
+	    <img alt="" height="90px" class="show" src="pfc-slides-assets/img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-msgfmt.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/mo-file.svg"/>
 	    <h3>Traducir</h3>
 	    <pre>es_ES.po<code>#. Comment from developers.
 # Comentario de los traductores.
@@ -182,15 +182,15 @@ msgstr[1] "Hola %s, tiene %i hijos.\n"</code></pre>
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
 	  <section  class="gettext" data-transition="fade">
-	    <img alt="" height="90px" class="hide" src="img/c-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-xgettext.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/pot-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-msginit.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
-	    <img alt="" height="60px" class="show" src="img/flecha-traducir.svg"/>
-	    <img alt="" height="90px" class="show" src="img/po-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-msgfmt.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/mo-file.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/c-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-xgettext.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/pot-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-msginit.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/po-file.svg"/>
+	    <img alt="" height="60px" class="show" src="pfc-slides-assets/img/flecha-traducir.svg"/>
+	    <img alt="" height="90px" class="show" src="pfc-slides-assets/img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-msgfmt.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/mo-file.svg"/>
 	    <h3>Traducir</h3>
 	    <p>Os Ficheiros PO son texto plano</p>
 	    <p>Podense editar con:</p>
@@ -209,15 +209,15 @@ msgstr[1] "Hola %s, tiene %i hijos.\n"</code></pre>
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
 
 	  <section  class="gettext" data-transition="fade">
-	    <img alt="" height="90px" class="hide" src="img/c-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-xgettext.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/pot-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-msginit.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
-	    <img alt="" height="60px" class="hide" src="img/flecha-traducir.svg"/>
-	    <img alt="" height="90px" class="hide" src="img/po-file.svg"/>
-	    <img alt="" height="60px" class="show" src="img/flecha-msgfmt.svg"/>
-	    <img alt="" height="90px" class="show" src="img/mo-file.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/c-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-xgettext.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/pot-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-msginit.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/po-file.svg"/>
+	    <img alt="" height="60px" class="hide" src="pfc-slides-assets/img/flecha-traducir.svg"/>
+	    <img alt="" height="90px" class="hide" src="pfc-slides-assets/img/po-file.svg"/>
+	    <img alt="" height="60px" class="show" src="pfc-slides-assets/img/flecha-msgfmt.svg"/>
+	    <img alt="" height="90px" class="show" src="pfc-slides-assets/img/mo-file.svg"/>
 	    <h3>Xerar ficheiro MO</h3>
 	  </section>
 
@@ -235,8 +235,8 @@ msgstr[1] "Hola %s, tiene %i hijos.\n"</code></pre>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
           <section>
-	    <img height="300vh" style="box-shadow: none; display:inline-block; border:none; padding: 0.5em;" src="img/gsoc2013.png"/>
-	    <img height="300vh" style="box-shadow: none; display:inline-block; border:none; padding: 0.5em;" src="img/gsoc2014.png"/>
+	    <img height="300vh" style="box-shadow: none; display:inline-block; border:none; padding: 0.5em;" src="pfc-slides-assets/img/gsoc2013.png"/>
+	    <img height="300vh" style="box-shadow: none; display:inline-block; border:none; padding: 0.5em;" src="pfc-slides-assets/img/gsoc2014.png"/>
 	  </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
@@ -269,7 +269,7 @@ msgstr[1] "Hola %s, tiene %i hijos.\n"</code></pre>
         <section>
           <section>
             <h2>Planificación</h2>
-  <img style="border:none; margin:0px; box-shadow:none;" width="100%" src="img/gantt.svg"/>
+  <img style="border:none; margin:0px; box-shadow:none;" width="100%" src="pfc-slides-assets/img/gantt.svg"/>
   <div class="spin-block">
   <h4>GSoC 2013</h4>
 	    <p>5 Iteracións</p>
@@ -289,7 +289,7 @@ msgstr[1] "Hola %s, tiene %i hijos.\n"</code></pre>
 
 	</section>
 
-	
+
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
         <section data-state="show-footer">
 	  <section>
@@ -308,15 +308,15 @@ msgstr[1] "Hola %s, tiene %i hijos.\n"</code></pre>
 	    <p>Navegación e busca</p>
 	    <p>Perfiles</p>
 	    <p>Plugins</p>
-	    
+
 	  </section>
-	  
+
 	  <section>
 	    <h2>Módulo de Ficheiros</h2>
-	    <img style="margin:0px; border:none; box-shadow:none;" alt="" width="700vh" src="img/pofile.png"/>
+	    <img style="margin:0px; border:none; box-shadow:none;" alt="" width="700vh" src="pfc-slides-assets/img/pofile.png"/>
 	    <p style="margin-top:5px;">GettextPo &bull; Deseño estensible &bull; Consellos &bull; Pistas</p>
 	  </section>
-	  
+
 	  <section>
 	    <h2>Módulo de Linguaxes</h2>
 	    <pre><code class="json">[...]
@@ -340,11 +340,11 @@ msgstr[1] "Hola %s, tiene %i hijos.\n"</code></pre>
 
 	  <section>
 	    <h2>Plugins</h2>
-	    <img alt="" style="margin:0px; border:none; box-shadow:none;"  height="400vh" src="img/plugins.svg"/>
+	    <img alt="" style="margin:0px; border:none; box-shadow:none;"  height="400vh" src="pfc-slides-assets/img/plugins.svg"/>
 	    <p style="margin-top:5px;">LibPeas &bull; Comprobadores &bull; Provedores de Pistas </p>
 
 	  </section>
-	  
+
 	  <section>
 	    <h2>Interface de Usuario</h2>
 	    <p>Varias versións</p>
@@ -360,8 +360,8 @@ msgstr[1] "Hola %s, tiene %i hijos.\n"</code></pre>
 	  </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
-	 
-	 <section data-state="hide-footer" data-background="black" data-background-video="video/demo2.webm"></section>
+
+	 <section data-state="hide-footer" data-background="black" data-background-video="pfc-slides-assets/video/demo2.webm"></section>
 	</section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
@@ -377,7 +377,7 @@ msgstr[1] "Hola %s, tiene %i hijos.\n"</code></pre>
 	    <h4>GUADEC 2013 en Brno (Rep. Checa)</h4>
 	    <h4>X GUADEC Hispana en Madrid</h4>
 	    <h4>GUADEC 2014 en Strasbourg (Francia)</h4>
-	    <img alt="" style="border:none" height="375vh" src="img/guadec.jpg"/>
+	    <img alt="" style="border:none" height="375vh" src="pfc-slides-assets/img/guadec.jpg"/>
 	  </section>
 
 	    <section>
@@ -402,9 +402,9 @@ msgstr[1] "Hola %s, tiene %i hijos.\n"</code></pre>
       <div class="grey"></div>
     </footer>
 
-    <script src="reveal/lib/js/head.min.js"></script>
-    <script src="reveal/js/reveal.js"></script>
-    <script src="js/reveal_config.js"></script>
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script src="pfc-slides-assets/js/reveal_config.js"></script>
 
   </body>
 </html>
