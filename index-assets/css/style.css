@@ -1,0 +1,32 @@
+
+
+
+body {
+    width: 800px;
+    margin:auto;
+    background-color: #E2E2A7;
+}
+
+
+section.slides article {
+    display: inline-block;
+    width: 45%;
+    margin: 1em;
+}
+
+section.slides article iframe {
+    width: 375px;
+    height: 200px;
+}
+
+section.slides article a {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    color: black;
+    font-family: sans-serif;
+    margin-top: 0.4em;
+}
