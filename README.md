@@ -1,4 +1,2 @@
-# Reveal.js template
+#Transparencias de Marcos Chavarría Teijeiro
 Repositorio base para almacenar presentacións varias feitas con Reveal.js.
-
-%% vim: textwidth=80 wrap
