@@ -1,0 +1,78 @@
+
+
+
+.reveal p,
+.reveal li{
+    color: white;
+    opacity: 0.8;
+} 
+
+#portada h1{
+    font-size: 2.75em;
+    font-weight: bold;
+    margin-bottom: 0em;
+}
+
+#portada h1 span.reduce {
+    font-size: 0.7em;
+}
+
+#portada h2 {
+    font-size:1.5em;
+    font-weight: bold;
+    margin-bottom:1em;
+}
+
+#portada h1,
+#portada h2{
+    display: inline;
+}
+
+#portada hgroup::before {
+    content: "“";
+}
+
+#portada hgroup::after {
+    content: "”";
+}
+
+#portada hgroup::before,
+#portada hgroup::after {
+    display: inline;
+    font-size: 2em;
+}
+
+#portada hgroup {
+    margin-bottom: 0.5em;
+}
+
+#portada h3 {
+    font-size: 1em;
+}
+
+#portada h4 {
+    text-align: right;
+    margin-right: 1.5em;
+    font-size: 1.5em;
+}
+
+
+li span.gr-control {
+    font-size: 0.75em;
+    margin-left: 1em;
+}
+
+
+.reveal h4 {
+    margin-top: 0.75em;
+    margin-bottom: 0em;
+}
+
+.reveal em {
+    font-weight: bold;
+}
+
+.reveal p {
+    margin: 15px 0px;
+    line-height: 1;
+}
