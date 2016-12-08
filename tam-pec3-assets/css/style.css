@@ -31,3 +31,77 @@ div.comp-os{
     vertical-align: middle;
     color: green;
 }
+
+.reveal section[data-background] {
+    background-color: rgba(255,255,255,0.4);
+    -webkit-box-shadow: 0px 0px 115px 0px rgba(255,255,255,0.4);
+    -moz-box-shadow: 0px 0px 115px 0px rgba(255,255,255,0.4);
+    box-shadow: 0px 0px 115px 0px rgba(255,255,255,0.4);
+}
+
+.reveal section[data-background] h1 {
+    text-shadow: none;
+}
+
+.reveal #portada img.logo {
+    height: 1.4em;
+    vertical-align: middle;
+}
+
+.reveal #portada .author {
+    display:inline-block;
+    float:right;
+    text-align: right;
+}
+
+.reveal #portada .author p.name{
+    margin:0;
+    font-size:0.8em;
+}
+
+.reveal #portada .author p.email{
+    margin:0;
+    font-size:0.5em;
+}
+
+.reveal #portada div.empresa {
+    background-color: #8b743d;
+    position: fixed;
+    width: 200%;
+    top: 0px;
+    margin-left: -50%;
+}
+
+.reveal #portada h1 {
+    font-size: 4.5em;
+}
+
+.reveal #portada div.empresa h1{
+    color: white;
+    text-transform: lowercase;
+    text-align: left;
+    font-size: 2em;
+    margin-left: 20vw;
+    margin-top: 15px;
+    line-height: 0.9em;
+    text-shadow: none;
+}
+
+.reveal #fin div.empresa {
+    background-color: #8b743d;
+    position: fixed;
+    width: 200%;
+    top: 0px;
+    margin-left: -50%;
+}
+
+.reveal #fin div.empresa h1{
+    color: white;
+    text-transform: lowercase;
+    text-align: left;
+    font-size: 2em;
+    margin-left: 20vw;
+    margin-top: 15px;
+    line-height: 0.9em;
+    text-shadow: none;
+}
