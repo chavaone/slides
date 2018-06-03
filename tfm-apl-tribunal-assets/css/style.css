@@ -1,0 +1,66 @@
+
+.reveal section img {
+	margin: 0;
+	border:none;
+	box-shadow: none;
+}
+
+
+.reveal section {
+	background-color: rgba(255,255,255, 0.5);
+}
+
+.reveal h1 {
+	font-size: 3em;
+}
+
+
+/*
+ *  PORTADA STYLES
+ */
+ .reveal .portada {
+	 height: 100%;
+ }
+ 
+ .reveal .logo-container {
+	 height: 175px;
+	 text-align: right;
+	 margin-bottom: 3em;
+ }
+
+.reveal .portada__titulo {
+	display: block;
+	width: calc(100% - 100px);
+	
+	margin-top:0;
+	margin-right: 10px;
+	
+	font-size: 2em;
+	text-align: left;
+}
+
+.reveal .portada-info {
+	position: absolute;
+	bottom: 0;
+	
+	width: 100%;
+	margin-bottom: 5em;
+	
+	text-align: left;
+}
+
+.reveal .portada-info__item {
+	font-size: 0.8em;
+	margin:0;
+	padding: 0.1em 0;
+}
+
+.reveal .portada-info__item--author {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+
+
+
+
