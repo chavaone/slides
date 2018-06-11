@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Diseño y creación de una aplicación para crear listas ordenadas de centros educativos de Galicia - UOC</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="Marcos Chavarría Teijeiro">
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+    
+    <link rel="stylesheet" href="tfm-apl-publica-assets/css/style.css">
+    
+    <script>
+    	var link = document.createElement( 'link' );
+    	link.rel = 'stylesheet';
+    	link.type = 'text/css';
+    	link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    	document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+        <div class="slides">
+          <!-- PORTADA -->
+          <section class="portada">
+            <div class="logo-container">
+              <img class="logo-container__img" src="tfm-apl-tribunal-assets/img/logouoc.png" alt="">
+            </div>
+            <h1 class="portada__titulo">Diseño y creación de una aplicación para crear listas ordenadas de centros educativos de Galicia</h1>
+            <div class="portada-info">
+              <p class="portada-info__item portada-info__item--author">Marcos Chavarría Teijeiro</p>
+              <p class="portada-info__item">Sergio Schvarstein Liuboschetz (Consultor)</p>
+              <p class="portada-info__item">Laura Porta Simó (Profesora Responsable de la Asignatura)</p>
+            </div>
+          </section>
+            
+          <!-- PROBLEMA -->
+          <section>
+            <section data-background-image="/tfm-apl-tribunal-assets/img/teachers.jpg">
+              <div class="addBackground">
+                <h2>Profesores</h2>
+                <p>Participan anualmente en concursos en los que deben entregar una lista ordenada de centros educativos según sus preferencias. Este proceso es largo y tedioso debido a la gran cantidad de centros existentes.</p>
+              </div>
+            </section>
+            <section>
+              <h1>Solución</h1>
+              <blockquote>Creación de una aplicación web que funcione de forma correcta y sea usable tanto en ordenadores de escritorio como en móviles y tabletas y que tenga como funcionalidad la de listar centros educativos de Galicia permitiendo filtrarlos por provincia, tipo de centro y tipo de estudios y ordenarlos por nombre distancia y tiempo en coche desde un punto determinado así como modificar dicho orden de forma manual.
+              </blockquote>
+            </section>
+          </section>
+    
+          <!-- APP -->
+          <section>
+            <!-- IU -->
+            <section data-background-image="/tfm-apl-publica-assets/img/web.png">
+              <div class="addBackground">
+                <h3>Resultado</h3>
+                <h2>Interfaz usable y atractiva</h2>
+              </div>
+            </section>
+            
+            <!-- FILTROS -->
+            <section data-background-video="/tfm-apl-publica-assets/video/centrosgalicia-filtros.webm">
+              <h2 class="addBackground">Permite filtrar por provincia, estudios y tipo de centro</h2>
+            </section>
+            
+            <!-- ORDENACIÓN -->
+            <section data-background-video="/tfm-apl-publica-assets/video/centrosgalicia-ordenar.webm">
+              <h2 class="addBackground">Permite ordenar por nombre, distancia y tiempo de viaje en coche</h2>
+            </section>
+            
+            <!-- REORDENACIÓN e LIXO -->
+            <section data-background-video="/tfm-apl-publica-assets/video/centrosgalicia-reordenar.webm">
+              <div class="addBackground">
+              <h2>Ordenación manual</h2>
+              <h2>Envio de centros a la "papelera"</h2>
+            </div>
+            </section>
+            
+            <!-- EXPORTAR -->
+            <section data-background-video="/tfm-apl-publica-assets/video/centrosgalicia-exportar.webm">
+              <h2 class="addBackground">Exportar lista de centros</h2>
+            </section>
+            
+            <!-- RESPONSIVE -->
+            <section data-background-video="/tfm-apl-publica-assets/video/centrosgalicia-responsive.webm">
+              <div class="addBackground">
+                <h1>Responsive</h1>
+                <h2>(compatible con escritorio, tableta y móviles</h2>
+              </div>
+            </section>
+            
+            <!-- I18N / SEO / VELOCIDADE DE CARGA -->
+            <section data-background-video="/tfm-apl-publica-assets/video/centrosgalicia-i18n.webm">
+              <div class="addBackground">
+                <h2>Disponible en varios idiomas</h2>
+                 <h2>Optimizada para buscadores</h2>
+              </div>
+            </section>
+            
+            <!-- VUE JS e BOOTSTRAP -->
+            <section>
+              <h1>Construído con tecnología en el estado del arte</h1>
+              <img height="200" src="tfm-apl-tribunal-assets/img/vuejs.png" alt="">
+              <img height="200" src="tfm-apl-tribunal-assets/img/bootstrap.png" alt="">
+            </section>
+          </section>
+            
+          <!-- RESULTADOs -->
+          <section data-background-image="/tfm-apl-publica-assets/img/analytics.png" data-background-size="contain">
+            <div class="addBackground">
+              <h2>En 10 días 500 usuarios</h2>
+              <h3>(sin estar activo el concurso para todo del profesorado)</h3>
+            </div>
+          </section>
+          
+          <section>
+            <h1>Gràcies!</h1>
+            <h1>Grazas!</h1>
+            <h1>¡Gracias!</h1>
+          </section>
+        </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script src="tfm-apl-publica-assets/js/reveal_config.js"></script>
+  </body>
+</html>
